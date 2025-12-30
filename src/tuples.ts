@@ -1,4 +1,5 @@
-  
+  // tuples means that we can have an array with fixed number of elements whose types are known
+
   const userEntry: [string, number, boolean] = ["Bob", 15, false];
   
 
