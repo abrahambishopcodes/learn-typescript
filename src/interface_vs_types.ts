@@ -35,3 +35,18 @@ type Product = {
 // } // typescript will mark this as a duplicate identifer issue
 
 // types do not support declaration merging
+
+// what types can do but interfaces cannot
+type OrderStatus = "pending" | "shipped" | "delivered" | "returned"
+
+type ID = number | string
+
+type Point = [number, number] // tuple type
+
+type User2 = {
+    id: ID,
+    name: string,
+    status: OrderStatus
+}
+
+type ReadOnlyUser = Readonly<User2>
